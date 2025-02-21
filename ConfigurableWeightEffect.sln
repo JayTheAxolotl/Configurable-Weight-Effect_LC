@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurableWeightEffect", "ConfigurableWeightEffect\ConfigurableWeightEffect.csproj", "{8433A2D0-AA58-4555-95B5-B1467D0794AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8433A2D0-AA58-4555-95B5-B1467D0794AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8433A2D0-AA58-4555-95B5-B1467D0794AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8433A2D0-AA58-4555-95B5-B1467D0794AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8433A2D0-AA58-4555-95B5-B1467D0794AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
