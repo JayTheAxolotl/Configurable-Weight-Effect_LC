@@ -20,6 +20,7 @@ public class Plugin : BaseUnityPlugin
 
     // All debug code beyond this point, remove for final release
     public static string Weight;
+    
     [HarmonyPatch(typeof(ItemCharger))]
     [HarmonyPatch("ChargeItem")]
     [HarmonyPostfix]
