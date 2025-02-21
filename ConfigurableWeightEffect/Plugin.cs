@@ -38,7 +38,7 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
     
 
     // All debug code beyond this point, remove for final release
-    public static string Weight;
+    public static float Weight;
     
     [HarmonyPatch(typeof(ItemCharger))]
     [HarmonyPatch("ChargeItem")]

@@ -18,6 +18,9 @@ public class PlayerControllerB_patches
         float1 = __instance.carryWeight - 1;
         float1 = float1 / divisor;
         __instance.carryWeight = float1 + 1;
+        
+        // DEBUG LINE
+        ConfigurableWeightEffect.Weight = __instance.carryWeight;
     }
 
     [HarmonyPostfix]
