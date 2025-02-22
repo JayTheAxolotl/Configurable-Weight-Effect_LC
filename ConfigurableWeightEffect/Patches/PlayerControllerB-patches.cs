@@ -10,7 +10,7 @@ public class PlayerControllerB_patches
 {
     // Just a temporary variable for easier readibility
     private static float float1;
-    public static float divisor = 2f;
+    public static float divisor = ConfigurableWeightEffect.divisor;
     
     [HarmonyPrefix]
     public static void PrefixPatch(PlayerControllerB __instance)

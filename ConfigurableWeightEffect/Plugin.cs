@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using BepInEx.Configuration;
 using ConfigurableWeightEffect.Patches;
 using HarmonyLib;
 using MonoMod.ModInterop;
@@ -14,10 +15,11 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
     public const string modVersion = "1.0.0";
     
     internal static new ManualLogSource Logger;
-    
     private readonly Harmony harmony = new Harmony(modGUID);
-
     private static ConfigurableWeightEffect Instance;
+    
+    private ConfigEntry<float> divisorConfigEntry;
+    public static float divisor;
     
     private void Awake()
     {
@@ -33,6 +35,14 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
         
         harmony.PatchAll(typeof(ConfigurableWeightEffect));
         harmony.PatchAll(typeof(PlayerControllerB_patches));
+
+        divisorConfigEntry = Config.Bind(
+            "General",
+            "Divisor",
+            2f,
+            "The divisor of the weight effect."
+            );
+        divisor = divisorConfigEntry.Value;
     }
 
     
