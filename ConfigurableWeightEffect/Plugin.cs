@@ -48,6 +48,7 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
     
 
     // All debug code beyond this point, remove for final release
+    /*
     public static float Weight;
     
     [HarmonyPatch(typeof(ItemCharger))]
@@ -56,5 +57,6 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
     static void OnItemCharge()
     {
         Logger.LogInfo($"Current Player Weight is: {Weight}");
-    }
+    } 
+    */
 }

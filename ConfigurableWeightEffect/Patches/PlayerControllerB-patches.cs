@@ -20,7 +20,7 @@ public class PlayerControllerB_patches
         __instance.carryWeight = float1 + 1;
         
         // DEBUG LINE
-        ConfigurableWeightEffect.Weight = __instance.carryWeight;
+        // ConfigurableWeightEffect.Weight = __instance.carryWeight;
     }
 
     [HarmonyPostfix]
