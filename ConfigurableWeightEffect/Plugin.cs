@@ -38,9 +38,9 @@ public class ConfigurableWeightEffect : BaseUnityPlugin
 
         divisorConfigEntry = Config.Bind(
             "General",
-            "Divisor",
+            "Float",
             2f,
-            "The divisor of the weight effect."
+            "The divisor of the weight effect. Make sure everyone has the same value because I am to lazy to set up syncing"
             );
         divisor = divisorConfigEntry.Value;
     }
